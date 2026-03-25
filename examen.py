@@ -6,21 +6,27 @@
 def obtenir_nom():
     # Llista de noms incorrectes
     noms = ["Timotei", "Timonel", "Timbaler", "Tennebaum", "TaoPaiPai", "Teruel", "Tirolés", "Traginer", "Tourmalet"]
-
     # Llista de cognoms incorrectes
     cognoms = ["Chandalet", "Camembert", "Sabadell", "Chevrolet", "Caganer", "Bechamel", "Casteller", "Churumbel", "Cafeaulait", "Crivillé", "Charmander"]
+    nom1 = input("Quin es el teu nom incorrecte? ")
+    cognom1 = input("Quin es el teu cognom? ")
+    return nom1 + " " + cognom1 
 
-
-    print("PENDENT: obtenir_nom")
+(obtenir_nom())
+    
     # Aquí has de construir un nom amb un nomb aleatori i un cognom aleatori de les llistes
     # retornar el nom construït
 
-def afegir_nom(llista):
-    print("PENDENT: afegir_nom")
+def afegir_nom():
+    llista = []
+    llista.append(obtenir_nom())
+    return llista
+print(afegir_nom())
     # Hem d'obtenir un nom aleatori, afegir-lo a la llista i mostrar per pantalla que hem afegit aquest nom
 
-def llistar_noms(llista):
-    print("PENDENT: llistar_noms")
+def llistar_noms():
+    print (afegir_nom())
+    print(llistar_noms())
     # Hem de mostrar per pantalla tots els noms que hem afegit a la llista
 
 def ordenar_noms(llista):
@@ -49,7 +55,7 @@ def gestionar_opcio(opcio, llista):
 
 # Programa principal
 
-print("PENDENT: programa principal")
+#print("PENDENT: programa principal")
 # Heu de treballar amb una llista a la que li farem diverses operacions mostrades al menú
 # Si ens introdueixen l'opció "F" acabarem el programa
 # Si no ens introdueixen l'opció "F" farem l'acció corresponent i tornarem a preguntar
